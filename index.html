@@ -6,7 +6,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,500,600,700i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>CSU Game Developers Association</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
   </head>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Web.json", {onProgress: UnityProgress});
+  </script>
   <body>
     <nav class="navbar" role="navigation" align="center">
       <ul>
@@ -52,7 +58,7 @@
       <a id="projects"></a>
       <div class="projects">
         <h3>Projects<h3>
-          <ul style="width:50%;">
+          <ul style="display:flex; width:50%; margin: auto;">
             <li>
               <h4>Project Sirius - Spring 2018</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/OXFJzrYVfJc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -60,7 +66,28 @@
                 fair testament to our ability to create a playable game in just a semester.</p>
             </li>
           </ul>
-          <ul style="width:50%;">
+          <ul style="display:flex; width:50%; margin: auto;">
+            <li>
+              <h4>Spaceloop - Ludum Dare 41 Submission</h4>
+              <div class="webgl-content">
+                <div id="gameContainer" style="width: 640px; height: 400px; position:relative; z-index:-1;"></div>
+                <div class="footer">
+                  <div class="webgl-logo"></div>
+                  <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                  <div class="title">Spaceloop</div>
+                </div>
+              </div>
+              <p>After your spaceship ran out of StarFuel in the empty space between your home galaxy and the next, you have to leap into action and collect stars to power it up and continue your journey.
+                Unfortunately, in the empty space between galaxies, there isn’t all that much oxygen, so you have to keep running in circles around your ship so that your suit can collect enough to keep you alive.<br><br>
+                Collect all twelve of the stars floating around your ship to power it back up and get to your grandmother’s house in time for dinner.<br><br>
+                Spaceloop is a fast-paced Runner-Roguelike requiring quick collection of items to avoid being sent back to the beginning.<br><br>
+                Use the arrow keys to move and the spacebar to jump. Be careful, if you get behind or fall off of the platforms you will have to start over.
+                You can loop around your ship as many times as it takes to collect all of the stars.<br><br>
+                Made as a team by members of the CSU Game Developers Association in 49ish hours with no pre-made assets.
+                We used Unity with Visual Studio, Adobe Photoshop, and Adobe Illustrator.</p>
+            </li>
+          </ul>
+          <ul style="display:flex; width:50%; margin:auto;">
             <li>
               <h4>Project Vega - Fall 2017</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/OXFJzrYVfJc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -74,7 +101,7 @@
       <a id="events"></a>
       <div class="events">
         <h3>Events<h3>
-          <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=csugda%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=csugda%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver" style="border-width:0;display:flex;width:50%;margin:auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
 
       <br>
@@ -118,7 +145,7 @@
             <li><a href="https://csugda.slack.com" style="font-size:18px;">Slack</a></li><br>
           </ul>
           <br>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.70291727699!2d-105.08809758371461!3d40.57023732934779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a53e929ccb5%3A0xd56fb287c93ed701!2sVisual+Arts%2C+Fort+Collins%2C+CO+80521!5e0!3m2!1sen!2sus!4v1524202110170" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.70291727699!2d-105.08809758371461!3d40.57023732934779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a53e929ccb5%3A0xd56fb287c93ed701!2sVisual+Arts%2C+Fort+Collins%2C+CO+80521!5e0!3m2!1sen!2sus!4v1524202110170" width="800" height="600" frameborder="0" style="border:0;display:flex;width:50%;margin:auto;" allowfullscreen></iframe>
       </div>
 
       <footer>
