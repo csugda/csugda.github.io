@@ -128,6 +128,29 @@ body, html{
   text-align: left;
 }
 
+.projects ul{
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+.projects ul button{
+  background-image: url("images/play_button.png");
+  background-size: 200px 80px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  width: 200px;
+  height: 80px;
+  border-radius: 50%;
+
+}
+
+.projects ul button:hover{
+  background-image: url("images/play_hover.png");
+}
+
 .footer a{
   text-decoration: none;
 }

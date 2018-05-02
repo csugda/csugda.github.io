@@ -3,22 +3,18 @@
   <head>
     <meta charset="utf-8">
     <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,500,600,700i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,500,600,700i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>CSU Game Developers Association</title>
     <link rel="stylesheet" href="TemplateData/style0.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
   </head>
-  <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Web.json", {onProgress: UnityProgress});
-  </script>
   <body>
     <nav class="navbar" role="navigation" align="center">
       <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About us</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#members">Members</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -41,7 +37,7 @@
 
       <a id="about"></a>
       <div class="about">
-        <h3>About us<h3>
+        <h3>About us</h3>
         <p>The CSU Game Developers Association is a Registered Student Organization at Colorado State University with the goal of
         providing a creative space for students to collaborate for the purpose of creating video games.</p>
         <ul><p>Some reasons why we're great:</p>
@@ -57,8 +53,8 @@
       <br>
       <a id="projects"></a>
       <div class="projects">
-        <h3>Projects<h3>
-          <ul style="display:flex; width:50%; margin: auto;">
+        <h3>Projects</h3>
+          <ul>
             <li>
               <h4>Project Sirius - Spring 2018</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/OXFJzrYVfJc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -66,17 +62,9 @@
                 fair testament to our ability to create a playable game in just a semester.</p>
             </li>
           </ul>
-          <ul style="display:flex; width:50%; margin: auto !important;">
+          <ul>
             <li>
-              <!--position:relative !important; width: 640px; height: 400px; z-index:-1;-->
               <h4>Spaceloop - Ludum Dare 41 Submission</h4>
-              <div class="webgl-content">
-                <div id="gameContainer" style="width:640px; height: 400px; z-index:-1; margin:auto !important;"></div>
-                <div class="footer">
-                  <div class="webgl-logo"></div>
-                  <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-                  <div class="title">Spaceloop</div>
-                </div>
               <p>After your spaceship ran out of StarFuel in the empty space between your home galaxy and the next, you have to leap into action and collect stars to power it up and continue your journey.
                 Unfortunately, in the empty space between galaxies, there isn’t all that much oxygen, so you have to keep running in circles around your ship so that your suit can collect enough to keep you alive.<br><br>
                 Collect all twelve of the stars floating around your ship to power it back up and get to your grandmother’s house in time for dinner.<br><br>
@@ -85,10 +73,11 @@
                 You can loop around your ship as many times as it takes to collect all of the stars.<br><br>
                 Made as a team by members of the CSU Game Developers Association in 49ish hours with no pre-made assets.
                 We used Unity with Visual Studio, Adobe Photoshop, and Adobe Illustrator.</p>
+                <a href="https://csugda.github.io/spaceloop" target="_blank"><button></button></a>
             </li>
           </ul>
           <br>
-          <ul style="display:flex; width:50%; margin:auto;">
+          <ul>
             <li>
               <h4>Project Vega - Fall 2017</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/OXFJzrYVfJc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -99,21 +88,28 @@
       </div>
 
       <br>
+      <a id="gallery"></a>
+      <div class="gallery">
+        <h3>Gallery</h3>
+        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/6a6d1da3efa8576999e4c4eb943f4b48.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      </div>
+
+      <br>
       <a id="events"></a>
       <div class="events">
-        <h3>Events<h3>
+        <h3>Events</h3>
           <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=csugda%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver" style="border-width:0;display:flex;width:50%;margin:auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
 
       <br>
       <a id="members"></a>
       <div class="members">
-        <h3>Members<h3>
+        <h3>Members</h3>
         <p style="font-size:21px;">Founding members (2017-2018): </p>
         <ul style="display:inline-block;">
           <li>Kevin Adair</li><br>
           <li>Lauren Butler</li><br>
-          <li>Desirae Cruz</li><br>
+          <li>Desarae Cruz</li><br>
           <li>John Eljaouhari</li><br>
           <li>Amelia Falldorf</li><br>
           <li>Allyson Fyfe</li><br>
@@ -137,7 +133,7 @@
       <br>
       <a id="contact"></a>
       <div class="contact">
-        <h3>Contact<h3>
+        <h3>Contact</h3>
           <p style="font-size:21px;">Ways to get in touch: </p>
 
           <ul style="display:block;">
