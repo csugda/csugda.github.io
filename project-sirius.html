@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Development Association | Project Sirius </title>
+	<link rel="stylesheet" type="text/css" href="css/large-size.css">
+	<link rel="stylesheet" type="text/css" href="css/small-size.css"  media="only screen and (max-width:700px)">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class = "sirius-background">
+   <script>
+
+	$( document ).ready(function() {
+		  $( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+	
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+			});
+
+</script>
+    <div id="wrapper" class="navbar">
+        <header>
+        <a href="index.html"><img src = "images/gda_logo_white.png" alt = "Game Development Association"></a>
+            <div class="offscreen"><a href="#content">Skip Navigation</a> </div>
+        <nav>
+		    <ul>
+			    <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		    </ul>
+	    </nav>
+       <div id="mobile">
+		<button class="hamburger">&#x2261;</button>
+		<button class="cross">x</button>
+	</div>
+    
+	<div class="menu">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		  </ul>
+    </div> 
+        <div id = "project-logo">
+            <p>Project Sirius</p>
+        </div>
+        </header>
+        <div id="content">
+            <div id = "main">
+                <p>
+                    Project Sirius also known as Snow White and the 7 is the second game created by the Game Development Association during Spring of 2018. With this game we decided to move away from 3D game design and tried developing a game in 2D instead.
+                </p>
+ <div id="story">         
+<h2> Story </h2>
+     <p>As mentioned above the story line for Snow White and the 7 was planned to be a Brother's Grimm inspired version of the classic Snow White tale. The main variation on it being that the main enemies through the story were the dwarfs corrupted to better represent the 7 deadly sins. </p>
+     
+     <p class = "clear"><img src ="images/FairyTale_Book_Opening_Beginning.jpg" alt ="Snow White and the 7 intro book cover" class = "float-right"> To better explain the story throughout the game in a fairytale like manner we decided to make an animated book that would act as the transition from level to level to provide information or story as the character progressed. The book was modeled and rigged by Dylan Plomondon but the provided textures were a combination of open source images and images made by Amelia Falldorf. This is the only part of the game which is modeled in 3D instead of 2D as page flips are slightly harder to do in 2D as well as being able to add a flickering effect to the cover.</p>
+     <p class = "clear"><img src ="images/FairyTale_Book_Opening_End.jpg" alt ="Snow White and the 7 intro book cover" class = "float-left">We were also able to make the book into a sort of menu when the player paused the game. This helped to ensure that the player would not be pulled away from the game with a GUI (Graphic User Interface) that didn't match the theme as well as being able to have a consistent theme for the options menus. If we got far enough into the game to include credits we could of presented them in the book flipping between groups of designers.</p>
+     </div> 
+    <div id="environments">
+<h2 class = "clear"> Environments </h2>
+    <p>Even though we did try to shrink down the total amount of levels we wanted to build to one doesn't mean we didn't come with any other variations.</p>
+       
+    <p class = "clear"><img src ="images/forest-background-small.jpg" alt ="Forest level environment" class = "full-size">The main level we did put the majority of our focus on was the forest level. At this was the first level of the game, it was the designed to appear the least corrupted of all the levels. It was also primarily designed by Morgan Jones.</p>
+       <p>In order to add depth to the levels within the game we made multiple images that would be different levels of the foreground as well as the background and had them scroll by the character at different speeds. This is a technique called parallax scrolling and is a very popular method of adding depth in 2d games.</p>
+       <p> Because of the use of parallax scrolling we had to make certain parts of the stage easier to identify as the same level our characters are on. This is also somewhat of a common trope in some games that being interactable objects sticking out a bit from the rest of the scenery, unless you want to be sneaky and hide items in the world.</p>
+       <p>Other levels we discussed about but didn't really get to work on unfortunately was the mines and possibly the castle lvl. Basically environments that would have been common place in the world of fairytale/Grimm tales.</p>
+       </div>
+       <div id = "characters">
+       <h2>Characters </h2>
+       <p class = "clear"><img src ="images/snowSprite.jpg" alt ="Snow White concept art" class = "float-right">Unlike our previous game where we could choose different groupings of robots to be your main character we had all our focus working on developing one character that being a revamped version of the character Snow White. Now in terms of personality we weren't going for the super cheerful singing Disney version of Snow White, we were instead looking at more combat-oriented Snow as our main character. In the game she wields different items belonging to different fairy tale characters as abilities and weapons such as the woodsman's Axe as her primary weapon, Red Riding Hood's hood as a means to double jump, etc.. Whether or not we got far enough along to actually implement these abilities I am not fully sure, but we did get some artwork for the character by Kaitlin Quick.</p>
+        <p>
+        Besides Snow White in the game we didn't really get to far in creating or adding other characters to the game. Of course some designs for a generic dwarf were created by Amelia Falldorf but besides the personalities being roughly based on the sin they represented we didn't get much else in terms of enemy personalities.
+        </p>
+        <p class = "clear"><img src ="images/Dwarf_Pride_Sprite.jpg" alt ="Dwarf sprite sheet" class = "full-size">At one point there was discussion of adding a character to the game that would serve as the trader/merchant between the levels of the game. This character was planned to be a variation of Jack from the Jack and the Bean Stock. He would sell items out of one of the beans that had grown down from the bean stock and make remarks about your progress. Unfortunately we do not have any images of this subject at the moment. 
+        </p>
+        
+        
+        </div>
+    <div id ="struggle">   
+<h2> Struggle </h2>
+           
+           <p>The other major issue the team faced even though we scaled down this time everyone just got really busy. We spread our resources too thin developing a large world that we barely got a working model of the game out.</p>
+        </div>    
+           <div id ="result"> 
+           <h2>Result</h2>
+                <p> 
+                    In the end we did get a bit farther in terms of a working engine than we did with Project Vega with improved art style and environment but we still came up a bit short in terms of having a completely polished level with combatable enemies. 
+               </p>
+            </div>
+            </div>
+            <div id = "sidebar">
+                <ul>
+			        <li><div class="image-background"><a href="#content">Project Sirius</a></div></li>
+                    
+                    <li><div class="image-background"><a href="#story">Story </a></div></li>
+                    <li><div class="image-background"><a href="#environments">Environments </a></div></li>
+                    <li><div class="image-background"><a href="#characters">Characters</a></div></li>
+                    <li><div class="image-background"><a href="#struggle">Struggle</a></div></li>
+                    <li><div class="image-background"><a href="#result">Result</a></div></li>
+		        </ul>
+            </div>
+            
+            
+            
+        </div>
+        <a name = "test"></a>
+        <div id = "footer">
+            <div><h3>Upcoming meetings</h3>
+            <p>We tend to meet on Thursdays in the Visual Arts Building at Colorado State University room F115. The meeting time is from 7:00PM to 8:00PM.</p></div>
+            
+            <div><h3>Contact Current Team</h3>
+            <p> If you see any issue or inaccuracies with the site please contact the current team at <a href= "mailto:csugamedevelopmentassociation@gmail.com">csugamedevelopmentassociation@gmail.com</a>. We will review your issue and make the necessary fixes.</p></div>
+            <div><h3>Want to Join?</h3>
+            <p>We are always interested in having new people join our club. Visit our <a href="https://ramlink.campuslabs.com/engage/organization/gamedevelopmentassociation">Ramlink</a> and send us a registration request today.</p></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

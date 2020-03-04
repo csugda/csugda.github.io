@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Development Association | Recommended Apps </title>
+	<link rel="stylesheet" type="text/css" href="css/large-size.css">
+	<link rel="stylesheet" type="text/css" href="css/small-size.css"  media="only screen and (max-width:700px)">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class = "vega-background">
+   <script>
+
+	$( document ).ready(function() {
+		  $( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+	
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+			});
+
+</script>
+    <div id="wrapper" class="navbar">
+        <header>
+        <a href="index.html"><img src = "images/gda_logo_white.png" alt = "Game Development Association"></a>
+            <div class="offscreen"><a href="#content">Skip Navigation</a> </div>
+        <nav>
+		     <ul>
+			    <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		    </ul>
+	    </nav>
+       <div id="mobile">
+		<button class="hamburger">&#x2261;</button>
+		<button class="cross">x</button>
+	</div>
+    
+	<div class="menu">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		  </ul>
+    </div> 
+        <div id = "project-logo">
+            <p>Recommended Apps</p>
+        </div>
+        </header>
+        <div id="content">
+            <div id = "main">
+                <p>At the Game Development Association we use a large variety of tools in order to create our games with and we are always interested in hearing about new ones but we figured it would be good to list a few we currently work with so you can learn about them if you’re interested.</p>
+                <div id = "unity">
+                <h2>Unity</h2>
+                <p>Unity is the primary game engine we use when developing our games as well as an industry standard application. It is a powerful application that has defaults for creating 2D and 3D games as well as a large community surrounding it which creates both tutorials and content other users can have in their game. There is a free license available with it which you can read more about on their website <a href="https://unity.com/">https://unity.com/</a>.</p>
+                </div>
+                <div id = "blender">
+                <h2>Blender</h2>
+                <p><a href="https://www.blender.org/"><img src = "images/blender-logo-socket.png" alt = "Blender" class = "float-left"></a>Blender is a free Open Source application which at this point can be considered the swiss army knife of design applications. With its most recent update to 2.8, Blender has received an immense overall switching it from just being an amazing 3D animation software to also supporting 2D, Texturing, Video editing, and the list goes on. However, the Game Development Association primarily uses it to create 3D models as well as animations for our games but we are always interested if you can use any of it's other features. Blender can be downloaded at <a href="https://www.blender.org/">https://www.blender.org/</a>.</p>
+                </div>
+                <div id = "slack">
+                <h2>Slack</h2>
+                <p><a href="https://slack.com/"><img src = "images/slack-logos-mobile.png" alt = "Slack" class = "float-left"></a>Slack is the application we use to communicate amongst each other when developing games, planning meeting times etc... We use Slack over other communication applications such as Skype as it allows us not only to communicate in a team space but also allows us to create sub categories in which we can talk about specific subjects. It is currently free to download at <a href="https://slack.com/">https://slack.com/</a>.</p>
+                </div>
+                <div id = "gimp">
+                <h2>GIMP 2.0</h2>
+                    <p><a href="https://www.gimp.org/"><img src = "images/gimp-logo.png" alt = "GIMP icon" class = "float-left"></a>GIMP 2 (GNU Image Manipulation Program) is a free image manipulation program that we have used in the past to create some of our 2D graphics. It is relatively powerful for being a free application but a bit of a steeper learning curve than applications like the Adobe Suite. Whether or not you prefer to use this application or Adobe is completely up to you, the Game Development Association recommends it mainly because not a lot of people want to drop $60 a month on the Adobe Suite. It can be downloaded at <a href="https://www.gimp.org/">https://www.gimp.org/</a>.</p>
+                </div>
+            </div>
+            <div id = "sidebar">
+                <ul>
+			        <li><div class="image-background"><a href="#content">Project Sirius</a></div></li>
+                    
+                    <li><div class="image-background"><a href="#unity">Story </a></div></li>
+                    <li><div class="image-background"><a href="#blender">Environments </a></div></li>
+                    <li><div class="image-background"><a href="#slack">Characters</a></div></li>
+                    <li><div class="image-background"><a href="#gimp">Struggle</a></div></li>
+		        </ul>
+            </div>
+            
+            
+            
+        </div>
+        <a name = "test"></a>
+        <div id = "footer">
+            <div><h3>Upcoming meetings</h3>
+            <p>We tend to meet on Thursdays in the Visual Arts Building at Colorado State University room F115. The meeting time is from 7:00PM to 8:00PM.</p></div>
+            
+            <div><h3>Contact Current Team</h3>
+            <p> If you see any issue or inaccuracies with the site please contact the current team at <a href= "mailto:csugamedevelopmentassociation@gmail.com">csugamedevelopmentassociation@gmail.com</a>. We will review your issue and make the necessary fixes.</p></div>
+            <div><h3>Want to Join?</h3>
+            <p>We are always interested in having new people join our club. Visit our <a href="https://ramlink.campuslabs.com/engage/organization/gamedevelopmentassociation">Ramlink</a> and send us a registration request today.</p></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
