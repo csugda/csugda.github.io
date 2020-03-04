@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Development Association | Hexago </title>
+	<link rel="stylesheet" type="text/css" href="css/large-size.css">
+	<link rel="stylesheet" type="text/css" href="css/small-size.css"  media="only screen and (max-width:700px)">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class = "hexago-background">
+   <script>
+
+	$( document ).ready(function() {
+		  $( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+	
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+			});
+
+</script>
+    <div id="wrapper" class="navbar">
+        <header>
+        <a href="index.html"><img src = "images/gda_logo_white.png" alt = "Game Development Association"></a>
+            <div class="offscreen"><a href="#content">Skip Navigation</a> </div>>
+        <nav>
+		    <ul>
+			     
+			    <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		    
+		    </ul>
+	    </nav>
+       <div id="mobile">
+		<button class="hamburger">&#x2261;</button>
+		<button class="cross">x</button>
+	</div>
+    
+	<div class="menu">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+		  </ul>
+    </div> 
+        <div id = "project-logo">
+            <p>Hexago</p>
+        </div>
+        </header>
+        <div id="content">
+            <div id = "main">
+                <p>
+                    Hexago was a special project made by the Game Development Association for Ludum Dare Game Jam 43 Fall 2018. Ludum Dare is an event in which game developers from all over are challenged to make a full game from scratch in 48 hours. In order to prevent people from getting an early start on the game, the theme of the game isn't announced until the event starts and there are a large number of themes it could be.
+                    
+                </p>
+                <div id = "planning">
+                    <h2>Planning</h2>
+                <p>
+                    The theme that was announced for the game jam was "Sacrifices have to be made" which made us originally think of a few different ideas for a game, one being based on the Incan/Mayan Empire requiring you to manage you cities resources while still being able to sacrifice members of your work force to appease the gods. The goal of that game would have been to build a monument to the gods that when built would no longer require you to sacrifice workers to appease the gods. 
+                </p>
+                
+                <p>
+                    Another idea we had before we originally settled on Hexago was a game base on the phrase "I don't have to be faster than the bear, I just need to be faster than you". Basically, the idea of the game was similar to temple run but with the twist that whatever was chasing you would eventually catch up to you unless you were willing to sacrifice other people running from the monster periodically.
+                </p>
+                <p>
+                    We then settled on the concept of Hexago which instead of sacrificing humans you would have to potentially sacrifice certain game tokens in order to possibly get a better score.
+
+                </p>
+                    </div>
+                
+                <div id="how-to-play">
+                <h2>How to Play</h2> 
+                <p>
+                Hexago is a puzzle game in which you have to move tiles on the board around in order to possibly get a higher score based on the rules each tile has linked to them. Each hexagon has a certain rule associated with it that determines how many points it either gives or takes from the overall score.</p>
+                <p>Examples include:</p>
+                <p class = "clear"><img src = "images/hex_lightGreen.png" alt = "Light green hexagon" class = "small-size">Green hexagons are worth 1 point on their own but an extra point for every green surrounding it.</p>
+                    <p class = "clear"><img src = "images/hex_samon.png" alt = "Red hexagon" class = "small-size">Red hexagons get +2 points for all adjacent red hexagons but -1 points for all adjacent green pieces.</p>
+                    <p class = "clear"><img src = "images/hex_teal.png" alt = "Blue hexagon" class = "small-size">Blue Hexagons get a +1 points for every unique hexagon touching it including the wall.</p>
+                    <p class = "clear"><img src = "images/hex_tan.png" alt = "Tan hexagon" class = "small-size">Tan hexagons get +1 point for every congruent tan hexagon.</p>
+                    <p class = "clear"><img src = "images/hex_purpPink.png" alt = "Pink hexagon" class = "small-size">Pink Hexagons double the scores of evey hexagon adjacent to it.</p>
+                    </div>
+ <div id="artwork">         
+<h2 class = clear> Artwork </h2>
+     <p><img src = "images/Hexago-intro.gif" alt = "Hexago Intro Animation" class = "float-right">In terms of artwork for the game there isn't that much of it. The most complex artwork that was made for the game was the animated title screen which had hexagons floating back in forward throughout space. All artwork that was made for the game was created by Dylan Plomondon.</p>
+     </div> 
+    <div id="contributions">
+<h2 class = "clear"> Contributions </h2>
+        <p>Rome wasn't built in a day but this game was built in two. I wanted to make this special section to spotlight all the people that actually created hexago.</p>
+        <ul>
+            <li><p>Miles Wood</p></li>
+            <li><p>David Im</p></li>
+            <li><p>Johnathan Griego</p></li>
+            <li><p>Dylan Plomondon</p></li>
+        </ul>
+        
+        
+        </div>
+    <div id ="struggle">   
+<h2> Struggle </h2>
+           
+           <p>Like a lot of our previous games the main challenge we faced was time but in this case the issue was we didn't have a lot of time to work on this project, so we had to go through the phases of development extremely fast. This meant we had to come up with and settle on a main idea for our game with a crunched time frame while still coming up with an idea that was both intriguing and practical for the time limit. </p>
+        
+            <p>Otherwise everything went well as we had just enough people working on the project to complete it as well as not face the issue of too many cooks in the kitchen.</p>
+        </div>    
+           <div id ="result"> 
+           <h2>Result</h2>
+                <p>At the end of the designated 48 Hours we had to work on our game we sent it in to the Ludum Dare website so it could be judged by the audience of gamers. Overall we didn't do that bad, we even made the front page of the website for a little while. However, we didn't receive a high enough score in order to be qualified for any of the categories for rewards.<img src = "images/ludum-dare-game-jam.jpg" alt = "Front page of Ludum Dare Game Jam 43" class = "full-size"></p>
+               
+               <p>Overall, the comments on the game were extremely positive with only constructive criticism (a truly rare occurrence). The reoccurring issue that everyone stated with the game was that it was way too easy and that if we would have incorporated possibly a goal score for each level or an extra challenge per level it would have been more interesting of a game.</p>
+               <p>If you want to play the game you can play it online at <a href="https://ldjam.com/events/ludum-dare/43/hexago">https://ldjam.com/events/ludum-dare/43/hexago</a>.</p>
+            </div>
+            </div>
+            <div id = "sidebar">
+                <ul>
+			        <li><div class="image-background"><a href="#content">Hexago</a></div></li>
+                    <li><div class="image-background"><a href="#planning">Planning</a></div></li>
+                    <li><div class="image-background"><a href="#how-to-play">How To Play </a></div></li>
+                    <li><div class="image-background"><a href="#artwork">Artwork </a></div></li>
+                    <li><div class="image-background"><a href="#contributions">Contributions</a></div></li>
+                    <li><div class="image-background"><a href="#struggle">Struggle</a></div></li>
+                    <li><div class="image-background"><a href="#result">Result</a></div></li>
+		        </ul>
+            </div>
+            
+            
+            
+        </div>
+        <a name = "test"></a>
+        <div id = "footer">
+            <div><h3>Upcoming meetings</h3>
+            <p>We tend to meet on Thursdays in the Visual Arts Building at Colorado State University room F115. The meeting time is from 7:00PM to 8:00PM.</p></div>
+            
+            <div><h3>Contact Current Team</h3>
+            <p> If you see any issue or inaccuracies with the site please contact the current team at <a href= "mailto:csugamedevelopmentassociation@gmail.com">csugamedevelopmentassociation@gmail.com</a>. We will review your issue and make the necessary fixes.</p></div>
+            <div><h3>Want to Join?</h3>
+            <p>We are always interested in having new people join our club. Visit our <a href="https://ramlink.campuslabs.com/engage/organization/gamedevelopmentassociation">Ramlink</a> and send us a registration request today.</p></div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
