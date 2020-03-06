@@ -1,0 +1,190 @@
+.float-left {
+	float: left;
+    width: 40%;
+    display: block;
+}
+
+.float-right {
+	float: right;
+    width: 40%;
+    display: block;
+}
+
+
+.full-size{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar a:hover{
+    color: aqua;
+   
+}
+.offscreen{
+  position: absolute;
+  left: -1000px;
+  width: 990px;
+  font-size: 1px;
+  line-height: 1;
+}
+
+
+
+.clear{
+    clear: both;
+}
+
+.image-background{
+    background-image: url(../images/Blue%20Rectangle.png);
+    background-size:cover;
+    background-position: center;
+    
+}
+
+body{
+    background-color: dimgrey;
+    background-image: url(../images/Background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+}
+
+header img{
+    width: 40%;
+}
+
+
+nav{
+    background-color: darkslategrey;
+    
+}
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    justify-content:space-around;
+    padding: 0px;
+}
+
+nav li{
+    border:solid;
+    
+    border-width: 1px;
+    border-color: aliceblue;    
+}
+
+nav a{
+    text-decoration: none;
+    color: lightgreen;
+    display: block;
+    padding: 10px 12px 10px 12px;
+    font-size: 1em;
+}
+#main img{
+    padding: 10px;
+}
+
+#project-logo{
+    text-align: center;
+    color: white;
+}
+
+#project-logo p{
+    font-size: 5em;
+    font-style: normal;
+    margin: 0px;
+}
+#wrapper{
+    max-width: 1200px;
+    background-color: rgba(171, 205, 239, .8);
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#content{
+    display: flex;
+    
+}
+
+#main{
+    width: 80%
+        
+}
+#main p{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.4em;
+}
+
+#main div{
+    width: 100%
+}
+
+#main h2{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+}
+
+#sidebar{
+    width: 20%;
+    background-color: rgba(141, 205, 139, .8);
+    align-content: center;
+}
+
+#sidebar ul{
+    
+    list-style-type: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0px;
+}
+
+#sidebar li{
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 1px;
+    border-bottom-color: black;
+    
+}
+
+
+#sidebar a{
+    text-decoration: none;
+    color: green;
+    text-align: center;
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 1.2em;
+    
+    
+}
+
+#footer{
+    justify-content: space-around;
+    
+}
+
+#footer h3{
+    text-align: center;
+    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+}
+
+#footer div{
+    background-color: azure;
+    padding: 10px;
+    width: 100%;
+}
+
+#footer p{
+    font-size: 1.2em;
+}

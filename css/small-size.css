@@ -1,0 +1,106 @@
+nav{
+    display: none;
+}
+
+
+/* Styles for hamburger menu */
+
+#mobile button {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3px;
+}
+
+.hamburger {
+	display: block;
+	background: none;
+	color: #fff;
+	border: none;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 2000;
+}
+
+.cross {
+	display: block;
+	background: none;
+	color: #fff;
+	border: none;
+	font-size: 2em;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+	z-index: 2000;
+}
+
+.menu {
+  z-index: 1000;
+  font-weight: bold;
+  width: 97%; 
+  background: #f1f1f1;
+  position: absolute;
+  text-align: center; 
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  background: #ffffff;
+  padding: 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+
+.menu li:hover {
+  background: #ffffff;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #006;
+}
+.menu a:hover {
+  color: #666;
+}
+
+#main{
+    width: 100%;
+}
+
+#sidebar{
+    display: none;
+}
+
+#footer{
+    display: block;
+    
+}
+#footer div{
+    background-color: azure;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+#main img{
+    max-width: 350px;
+    width: 90%;
+    margin: auto;
+}
+.float-left {
+    float: none;
+    max-width: 350px;
+    width: 90%;
+    display: block;
+}
+
+.float-right {
+    float: none;
+    max-width: 350px;
+    width: 90%;
+    display: block;
+}

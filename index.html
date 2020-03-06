@@ -1,158 +1,124 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	  <link href="https://fonts.googleapis.com/css?family=Exo+2:200,400,500,600,700i" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>CSU Game Developers Association</title>
-    <link rel="stylesheet" href="TemplateData/style0.css">
-  </head>
-  <body>
-    <nav class="navbar" role="navigation" align="center">
-      <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About us</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#members">Members</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="page-container">
-      <a id="home"></a>
-      <div class="home">
-        <div class="logo">
-        <a href="#home">
-        <img src="images/gda_logo_white.png" alt="CSU GDA logo" style="height:250px;width:415px;" class="container-img">
-      </a>
-      </div>
-        <header> CSU Game Developers Association </header>
-        <ul>
-          <li><a href="https://ramlink.campuslabs.com/engage/organization/csugda"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/csugda/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.instagram.com/csugda/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Game Development Association | Home </title>
+	<link rel="stylesheet" type="text/css" href="css/large-size.css">
+	<link rel="stylesheet" type="text/css" href="css/small-size.css"  media="only screen and (max-width:700px)">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i&display=swap" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body class = "vega-background">
+   <script>
 
-        </ul>
-      </div>
+	$( document ).ready(function() {
+		  $( ".cross" ).hide();
+	$( ".menu" ).hide();
+	$( ".hamburger" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".hamburger" ).hide();
+	$( ".cross" ).show();
+	});
+	});
+	
+	$( ".cross" ).click(function() {
+	$( ".menu" ).slideToggle( "slow", function() {
+	$( ".cross" ).hide();
+	$( ".hamburger" ).show();
+	});
+	});
+			});
 
-      <a id="about"></a>
-      <div class="about">
-        <h3>About us</h3>
-        <p>The CSU Game Developers Association is a Registered Student Organization at Colorado State University with the goal of
-        providing a creative space for students to collaborate for the purpose of creating video games. CSU GDA was founded in Fall 2017,
-        and continues on!</p>
-        <img src="images/about_pic.jpeg" alt="Members compete in a coding competition" style="height:auto;width:60%;display:flex;margin:auto;">
-        <ul><p>Some reasons why we're great:</p>
-          <li>&#9658; Students of all disciplines and skill levels are welcome to join!</li><br>
-          <li>&#9658; We aim to make a game every semester</li><br>
-          <li>&#9658; We use Unity, Blender and other widely used technologies so you can be prepared for industry work</li><br>
-          <li>&#9658; We have 15+ supremely talented team members from Visual Arts, Computer Science, and other disciplines</li><br>
-          <li>&#9658; We connect with the greater development community in Colorado via the Colorado Independent Game Developers Association</li><br>
-          <li>&#9658; We participate in hackathons and development competitions together</li>
-        </ul>
-      </div>
-
-      <br>
-      <a id="projects"></a>
-      <div class="projects">
-        <h3>Projects</h3>
-          <ul>
-            <li>
-              <h4>Project Sirius - Spring 2018</h4>
-              <p>Project Sirius is a 2D platformer called Snow White and the 7. We approached this project with better scope and scale. Although the game is fairly short, it is a
-                fair testament to our ability to create a playable game in just a semester.</p>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <h4>Spaceloop - Ludum Dare 41 Submission</h4>
-              <p>After your spaceship ran out of StarFuel in the empty space between your home galaxy and the next, you have to leap into action and collect stars to power it up and continue your journey.
-                Unfortunately, in the empty space between galaxies, there isn’t all that much oxygen, so you have to keep running in circles around your ship so that your suit can collect enough to keep you alive.<br><br>
-                Collect all twelve of the stars floating around your ship to power it back up and get to your grandmother’s house in time for dinner.<br><br>
-                Spaceloop is a fast-paced Runner-Roguelike requiring quick collection of items to avoid being sent back to the beginning.<br><br>
-                Use the arrow keys to move and the spacebar to jump. Be careful, if you get behind or fall off of the platforms you will have to start over.
-                You can loop around your ship as many times as it takes to collect all of the stars.<br><br>
-                Made as a team by members of the CSU Game Developers Association in 49ish hours with no pre-made assets.
-                We used Unity with Visual Studio, Adobe Photoshop, and Adobe Illustrator.</p>
-                <a href="https://csugda.github.io/spaceloop" target="_blank"><button></button></a>
-            </li>
-          </ul>
-          <br>
-          <ul>
-            <li>
-              <h4>Project Vega - Fall 2017</h4>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/OXFJzrYVfJc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <p>Project Vega was the first game we designed and developed. The goal here was to make a 3D Roguelike in a futuristic setting. What we set out to do in a semester
-                turned into a small tech demo (see above). Given more time, we would have flushed this one out!</p>
-            </li>
-          </ul>
-      </div>
-
-      <br>
-      <a id="gallery"></a>
-      <div class="gallery">
-        <h3>Gallery</h3>
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://lightwidget.com/widgets/6a6d1da3efa8576999e4c4eb943f4b48.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:50%;border:0;overflow:hidden;"></iframe>
-      </div>
-
-      <br>
-      <a id="events"></a>
-      <div class="events">
-        <h3>Events</h3>
-          <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=csugda%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FDenver" style="border-width:0;display:flex;width:50%;margin:auto;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-
-      <br>
-      <a id="members"></a>
-      <div class="members">
-        <h3>Members</h3>
-        <p style="font-size:21px;">Founding members (2017-2018): </p>
-        <ul style="display:inline-block;">
-          <li>Kevin Adair</li><br>
-          <li>Lauren Butler</li><br>
-          <li>Desarae Cruz</li><br>
-          <li>John Eljaouhari</li><br>
-          <li>Amelia Falldorf</li><br>
-          <li>Allyson Fyfe</li><br>
-          <li>Jonathan Griego</li><br>
-          <li>Xavier Hadley</li><br>
-          <li>David Im</li><br>
-        </ul>
-        <ul style="display:inline-block;">
-          <li>Morgan Jones</li><br>
-          <li>Josh Lutz</li><br>
-          <li>Ian Marshall</li><br>
-          <li>Mike McCaffery</li><br>
-          <li>Habeeb Mohammed</li><br>
-          <li>Dylan Plomondon</li><br>
-          <li>Kaitlin Quick</li><br>
-          <li>Victor Weeks</li><br>
-          <li>Miles Wood</li><br>
-        </ul>
-        <p style="font-size:21px;">Cyane Tornatzky (Faculty Advisor)</p>
-      </div>
-
-      <br>
-      <a id="contact"></a>
-      <div class="contact">
-        <h3>Contact</h3>
-          <p style="font-size:21px;">Ways to get in touch: </p>
-
-          <ul style="display:block;">
-            <li><a href="mailto: csugda@gmail.com" style="font-size:18px;">csugda@gmail.com</a></li><br>
-            <li><a href="https://ramlink.campuslabs.com/engage/organization/csugda" style="font-size:18px;">RamLink</a></li><br>
-            <li><a href="https://csugda.slack.com" style="font-size:18px;">Slack</a></li><br>
-          </ul>
-          <br>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.70291727699!2d-105.08809758371461!3d40.57023732934779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87694a53e929ccb5%3A0xd56fb287c93ed701!2sVisual+Arts%2C+Fort+Collins%2C+CO+80521!5e0!3m2!1sen!2sus!4v1524202110170" width="800" height="600" frameborder="0" style="border:0;display:flex;width:50%;margin:auto;" allowfullscreen></iframe>
-      </div>
-
-      <br>
-      <footer>
-        site by <a style="text-decoration:none" href="https://github.com/habeeb-umo">Habeeb</a>
-      </footer>
+</script>
+    <div id="wrapper" class="navbar">
+        <header>
+        <a href="index.html"><img src = "images/gda_logo_white.png" alt = "Game Development Association"></a>
+            <div class="offscreen"><a href="#content">Skip Navigation</a> </div>
+        <nav>
+		     <ul>
+			    <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+                <li><a href="oldindex.html">Old Website</a></li>
+		    </ul>
+	    </nav>
+       <div id="mobile">
+		<button class="hamburger">&#x2261;</button>
+		<button class="cross">x</button>
+	</div>
+    
+	<div class="menu">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			    <li><a href="project-vega.html">Project Vega</a></li>
+			    <li><a href="project-sirius.html">Project Sirius</a></li>
+			    <li><a href="project-altair.html">Project Altair</a></li>
+			    <li><a href="hexago.html">Hexago</a></li>
+			    <li><a href="artwork.html">Art Work</a></li>
+			    <li><a href="recommended-apps.html">Recommended Apps</a></li>
+                <li><a href="oldindex.html">Old Website</a></li>
+		  </ul>
+    </div> 
+        <div id = "project-logo">
+            <p>Home</p>
+        </div>
+        </header>
+        <div id="content">
+            <div id = "main">
+                <div id="intro">
+                <p>Hello and welcome to the Game Development Association website. We are a club at Colorado State University that is dedicated to bringing students with different majors from the university together in order to create a video game bigger than anyone could do on their own by learning to work in a cross-disciplinary team. </p>
+                <p><a href="index.html"><img src = "images/gda_logo_white.png" alt = "Game Development Association" class = "float-right"></a>If a person is interested in joining the club, there is no requirements necessary for joining it except having a passion for games. Because we work in a cross disciplinary environment if a person comes in with not a lot of experience then other members of the group will help you learn new skills.</p>
+                <p>In terms of what we do, we tend to have one massive project going on during either one semester or one school year which consists of all the members working on a new game. We also do smaller events from time to time such as meeting with other game developers in the industry and participate in game jams. Game jams are competitions that involve a small team making a video game in less than 24-48 hours depending on the game jam.  </p>
+                    
+                <p>If you are not yet intrigued to join the Game Development Association, here is a video created by Dylan Plomondon Interviewing members of the Game Development Association about why they decided to join the Game Development Association and what they like about game design. It was originally created for Dylan's blog Development Ready but it's still a decent video with old members of the game development association.
+                    
+                    <iframe src="https://player.vimeo.com/video/304813874" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen  class = "full-size"></iframe>
+                    </p>
+            </div>
+            <div id = "meeting location and times">
+                <h2>Meeting Times and Location</h2>
+                <p> This semester we are currently hosting meetings from 7:00 to 8:00PM in room F115 of the Visual Arts Building. Depending on availability of the room this is subject to changes so please keep an eye out for updates.
+                </p>
+            </div>
+                
+            <div id = "primary contact">
+                 <h2>Primary Contact</h2>
+                <p>The current president the of Game Development Association is Dylan Leon Plomondon which can be contacted at the new GDA email <a href= "mailto:csugamedevelopmentassociation@gmail.com">csugamedevelopmentassociation@gmail.com</a>. For more contact information visit the <a href="contact.html">contact</a> page </p>
+             </div>
+            </div>
+            <div id = "sidebar">
+                <ul>
+			        <li><div class="image-background"><a href="#intro">Introductions</a></div></li>
+                    <li><div class="image-background"><a href="#meeting location and times">Meeting Times<br> and Schedule</a></div></li>
+                    <li><div class="image-background"><a href="#primary contact">Primary Contact </a></div></li>
+		        </ul>
+            </div>
+            
+            
+            
+        </div>
+        <a name = "test"></a>
+        <div id = "footer">
+            <div><h3>Upcoming meetings</h3>
+            <p>We tend to meet on Thursdays in the Visual Arts Building at Colorado State University room F115. The meeting time is from 7:00PM to 8:00PM.</p></div>
+            
+            <div><h3>Contact Current Team</h3>
+            <p> If you see any issue or inaccuracies with the site please contact the current team at <a href= "mailto:csugamedevelopmentassociation@gmail.com">csugamedevelopmentassociation@gmail.com</a>. We will review your issue and make the neccesary fixes.</p></div>
+            <div><h3>Want to Join?</h3>
+            <p>We are always interested in having new people join our club. Visit our <a href="https://ramlink.campuslabs.com/engage/organization/gamedevelopmentassociation">Ramlink</a> and send us a registration request today.</p></div>
+        </div>
     </div>
-  </body>
+    
+</body>
+
 </html>
